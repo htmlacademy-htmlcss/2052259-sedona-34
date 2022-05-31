@@ -23,8 +23,6 @@
                     <a href="Catalog.html" class="navigation-link">Гостиницы</a>
                 </li>
             </ul>
-            <!--</nav>-->
-            <!--<nav class="navigation-user">-->
             <ul class="navigation-list-user">
                 <li class="navigation-item-user">
                     <a href="#" class="navigation-link-user">
@@ -32,7 +30,6 @@
                     </a>
                 </li>
                 <li class="navigation-item-user">
-                    <!--<button type="submit" class="navigation-button-like">-->
                     <a class="navigation-link-user-like" href="#">
                         <span class="visually-hidden">Гостиницы в избронном</span>
                         <span class="number-like">1</span>
@@ -117,7 +114,7 @@
     <section>
         <h2 class="visually-hidden">Сортировка гостиниц</h2>
         <output class="serch-hotel">Найдено гостиниц 38</output>
-        <select class="select-control" aria-label="Сортировка">
+        <select class="select-control-price-hotel" aria-label="Сортировка">
             <option value="cheap">Сначала дешёвые</option>
             <option value="expensive">Сначала дорогие</option>
             <option value="popular">Сначала популярные</option>
@@ -209,16 +206,20 @@
                 <a class="pagination-link" href="#">5</a>
             </li>
         </ul>
-        <label class="product-card">
-            <input class="product-card" type="text" value="Гостиниц на странице:">
-        </label>
+        <span>Гостиниц на странице:</span>
+        <select class="select-control-quantity-hotel" name="Гостиниц на странице" " aria-label=" Отображенное количество
+            гостиниц после фильтра">
+            <option value="first">1</option>
+            <option value="second">2</option>
+            <option value="third">3</option>
+            <option value="fourth">4</option>
+        </select>
     </section>
     </main>
 
     <footer class="paige-footer">
         <!--Подвал сайта-->
         <section class="subscribe-user">
-            <!--<img class="subscribe-user" src="#" alt="Фон подписки">-->
             <h2 class="subscribe-user">Подпишитесь на рассылку</h2>
             <p class="subscribe-user">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form action="https://echo.htmlacademy.ru/" method="post">
