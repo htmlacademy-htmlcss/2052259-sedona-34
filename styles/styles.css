@@ -60,6 +60,11 @@ body {
     margin-right: 70px;
 }
 
+.navigation-item-user {
+    display: flex;
+    justify-content: center;
+}
+
 .navigation-link {
     font-size: 20px;
     font-weight: 700;
@@ -292,7 +297,6 @@ ul {
 }
 
 .hotel-filter-catalog {
-
     width: 1200px;
     padding: 35px 70px 70px 70px;
 }
@@ -309,6 +313,37 @@ ul {
     justify-content: space-between;
     padding: 0;
     margin: 0 auto;
+}
+
+.product-card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 340px;
+    height: 438px;
+}
+
+.product-card-Amara-Resort {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.product-card-Desert-Quail {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.product-card-Villas-Poco-Diablo {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.product-card-GreenTree-Inn {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
 }
 
 .hotel-result {
