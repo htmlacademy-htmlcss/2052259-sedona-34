@@ -245,10 +245,8 @@ ul {
     color: #ffffff;
 }
 
-.page-footer-container {
+.paige-footer {
     width: 1200px;
-    display: flex;
-    margin: auto;
 }
 
 .subscribe-user-title {
@@ -268,22 +266,28 @@ ul {
     text-transform: uppercase;
 }
 
-.footer-social {
+/*.footer-social {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
+}*/
 
 .footer-social-list {
     display: flex;
     flex-wrap: wrap;
-    width: 170px;
+    padding: 0;
     margin-left: 40px;
+}
+
+.footer-social-item {
+    display: flex;
+    padding: 0;
 }
 
 .footer-contact {
     width: 720px;
     margin: auto;
+    text-align: center;
 }
 
 .footer-logo {
