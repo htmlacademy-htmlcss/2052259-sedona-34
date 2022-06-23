@@ -16,12 +16,15 @@
 
 html {
     height: 100%;
+    width: 100%;
     background-color: #F2F2F2;
 }
 
 body {
-    width: 1200px;
-    background-color: #FFFFFF;
+    /*width: 1200px;
+    background-color: #FFFFFF;*/
+    width: 1280px;
+    background-color: #F2F2F2;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -34,8 +37,11 @@ body {
 }
 
 .page-header {
+    width: 1200px;
     background-color: #FFFFFF;
+    margin: 0 auto;
 }
+
 
 .navigation {
     display: flex;
@@ -116,8 +122,9 @@ body {
 
 .main-container {
     flex-grow: 1;
-    /*    padding-top: 64px;
-    padding-bottom: 60px;*/
+    width: 1200px;
+    background-color: #FFFFFF;
+    margin: 0 auto;
 }
 
 .page-container {
@@ -138,8 +145,6 @@ body {
 .logo-welcome {
     display: block;
     margin: 0 auto;
-    /*margin-top: 51px;
-    margin-bottom: 82px;*/
 }
 
 .main-welcome {
@@ -172,6 +177,16 @@ body {
     text-align: center;
 }
 
+.advantages-list-icon {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.advantages-item:first-child {
+    width: 100%;
+}
+
 .advantages-list {
     margin: 0;
     padding: 0;
@@ -193,9 +208,6 @@ body {
 .advantages-housing,
 .advantages-food,
 .advantages-souvenir {
-    /*display: flex;
-    display: block;
-    padding: 80px 85px;*/
     padding-top: 80px;
 }
 
@@ -207,9 +219,8 @@ body {
 
 .advantages-item,
 .advantages-description-block {
-    /*display: flex;*/
     width: 400px;
-    height: 384px;
+    min-height: 384px;
     list-style-type: none;
     padding: 0;
 }
@@ -267,7 +278,6 @@ body {
 
 .serch-hotel-title {
     margin: 0 auto;
-    /*margin-top: 91px;*/
     margin-bottom: 29px;
     font-size: 30px;
     line-height: 36px;
@@ -315,6 +325,7 @@ body {
 
 .paige-footer {
     width: 1200px;
+    background-color: #FFFFFF;
     margin: 0 auto;
 }
 
@@ -468,7 +479,6 @@ body {
 .serch-hotel {
     padding: 0;
     padding-top: 57px;
-    /*margin: 58px 191px 62px 72px;*/
 }
 
 .select-control-price-hotel {
@@ -507,41 +517,60 @@ body {
     flex-wrap: wrap;
     list-style-type: none;
     width: 340px;
-    height: 438px;
+    min-height: 438px;
 }
 
-.product-card-Amara-Resort {
+.Amara-Resort {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     list-style-type: none;
+}
+
+.Poco-Diablo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.Desert-Quail {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    list-style-type: none;
+
+}
+
+.GreenTree-Inn {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    list-style-type: none;
+
+}
+
+.product-card-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     padding: 20px;
 }
 
-.product-card-Desert-Quail {
+.list-stars-product-card {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
+}
+
+.product-card-image {
     padding: 20px;
 }
 
-.product-card-Villas-Poco-Diablo {
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-    padding: 20px;
-}
-
-.product-card-GreenTree-Inn {
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-    padding: 20px;
-}
 
 .catalog-pagination {
     display: flex;
     flex-wrap: wrap;
-    /*min-height: auto;*/
     list-style-type: none;
     width: auto;
 }
