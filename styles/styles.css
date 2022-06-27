@@ -468,6 +468,11 @@ body {
     padding-top: 60px;
 }
 
+.hotel-serch-sorting {
+    padding: 0;
+    margin: 0 auto;
+}
+
 .hotel-result {
     display: flex;
 }
@@ -475,6 +480,7 @@ body {
 .serch-hotel {
     padding: 0;
     padding-top: 57px;
+    padding-left: 72px
 }
 
 .select-control-price-hotel {
@@ -499,11 +505,11 @@ body {
 }
 
 .product-list {
-    display: flex;
-    width: 1056px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 340px 340px 340px;
+    gap: 0px 18px;
     list-style-type: none;
-    justify-content: space-between;
+    width: 1056px;
     padding: 0;
     margin: 0 auto;
 }
@@ -511,39 +517,35 @@ body {
 .product-card {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     list-style-type: none;
     width: 340px;
     min-height: 438px;
+    flex-grow: 1;
 }
 
 .Amara-Resort {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     list-style-type: none;
 }
 
 .Poco-Diablo {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     list-style-type: none;
 }
 
 .Desert-Quail {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     list-style-type: none;
-
 }
 
 .GreenTree-Inn {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     list-style-type: none;
-
 }
 
 .product-card-content {
@@ -551,6 +553,7 @@ body {
     flex-wrap: wrap;
     flex-direction: column;
     padding: 0 20px 20px 20px;
+    flex-grow: 1;
 }
 
 .list-stars-product-card {
@@ -596,6 +599,7 @@ body {
 .catalog-pagination {
     display: flex;
     flex-wrap: wrap;
+    align-items: baseline;
     list-style-type: none;
     width: auto;
 }
@@ -625,6 +629,13 @@ body {
     color: #ffffff;
     background-color: #82B3D3;
     text-decoration: none;
+}
+
+.catalog-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
 }
 
 .filter-hotel {
@@ -776,4 +787,10 @@ body {
     font-size: 18px;
     line-height: 21px;
     color: #333333;
+}
+
+.select-quantity-hotel {
+    padding: 10px;
+    margin: 30px;
+    width: 150px;
 }
