@@ -21,8 +21,6 @@ html {
 }
 
 body {
-    /*width: 1200px;
-    background-color: #FFFFFF;*/
     width: 1280px;
     background-color: #F2F2F2;
     display: flex;
@@ -50,14 +48,17 @@ body {
 }
 
 .header-logo {
+    display: block;
+    position: absolute;
     width: 140px;
-    margin-left: 70px;
+    margin-left: 72px;
     margin-right: 30px;
 }
 
 .navigation-list {
     display: flex;
     flex-wrap: wrap;
+    position: relative;
     margin: 0;
     padding: 0;
     width: 390px;
@@ -65,6 +66,8 @@ body {
 }
 
 .navigation-item {
+    display: flex;
+    flex-wrap: wrap;
     padding: 20px 17px;
     display: flex;
     flex-wrap: wrap;
@@ -72,20 +75,24 @@ body {
 }
 
 .navigation-user {
-    width: 265px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    min-width: 265px;
+    margin: 0;
     margin-left: auto;
-    margin-right: 70px;
+    /*margin-right: 55px;*/
     padding: 0px;
 }
 
 .navigation-item-user {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     display: block;
     min-width: 42px;
-    min-height: 24px;
-    padding: 20px 0px;
+    /* min-height: 24px;*/
+    padding: 15px;
 }
 
 .navigation-link {
@@ -96,19 +103,26 @@ body {
     text-decoration: none;
 }
 
-.navigation-link-user {
-    background-image: url("../images/search.svg");
-    background-repeat: no-repeat;
-
+.figure {
+    padding: 15px 2px 31px 24px;
 }
 
-.navigation-link-user-like {
-    background-image: url("../images/favorite.svg");
-    background-repeat: no-repeat;
-
+.navigation-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    fill: #dbdbdb;
 }
 
 .button-navigation-user {
+    display: inline-block;
+    padding: 5px 17px 4px 17px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
     font-size: 16px;
     line-height: 20px;
     text-align: center;
@@ -117,7 +131,6 @@ body {
     background-color: #756157;
     text-decoration: none;
     text-transform: uppercase;
-
 }
 
 .main-container {
@@ -136,9 +149,9 @@ body {
     background-image: url("../images/index-background.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
-    display: block;
     margin: 0 auto;
-    padding-top: 51px;
+    margin-bottom: 12px;
+    padding-top: 50px;
     min-height: 485px;
 }
 
@@ -149,8 +162,8 @@ body {
 
 .main-welcome {
     display: block;
+    text-transform: uppercase;
     margin: 0 auto;
-    margin-top: 63px;
     margin-bottom: 31px;
     font-size: 30px;
     line-height: 36px;
@@ -232,7 +245,7 @@ body {
 
 .advantages-title-block {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 27px;
 }
 
 .advantages-description {
@@ -284,7 +297,6 @@ body {
 
 .serch-hotel-text {
     margin: 0 auto;
-    margin-bottom: 56px;
     font-size: 22px;
     line-height: 26px;
     font-weight: 400;
@@ -293,11 +305,19 @@ body {
     color: #333333;
 }
 
+.serch-hotel-text2 {
+    margin-bottom: 56px;
+    padding-right: 18px;
+}
+
 .button-serch-hotel {
     margin: 0 auto;
     margin-bottom: 93px;
-    width: 574px;
-    height: 60px;
+    padding: 12px 15px 12px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 545px;
     font-size: 20px;
     line-height: 36px;
     font-weight: 700;
@@ -306,6 +326,12 @@ body {
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+.subscribe-form {
+    padding: 25px 15px 20px 5px;
+    width: 600px;
+    border-radius: 12px 0 0 12px;
 }
 
 .subscribe-user {
@@ -341,11 +367,24 @@ body {
 }
 
 .subscribe-form-wrapp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 0 auto;
     margin-bottom: 94px;
 }
 
+.subscribe-form-button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .button-subscribe-form {
+    padding: 12px 15px 12px 15px;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
     font-size: 20px;
     line-height: 36px;
     font-weight: 700;
@@ -367,7 +406,7 @@ body {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    padding: 40px 70px 30px 70px;
+    padding: 0;
     margin: 0;
 }
 
@@ -479,8 +518,7 @@ body {
 
 .serch-hotel {
     padding: 0;
-    padding-top: 57px;
-    padding-left: 72px
+    padding-top: 90px;
 }
 
 .select-control-price-hotel {
