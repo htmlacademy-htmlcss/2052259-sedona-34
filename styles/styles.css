@@ -480,18 +480,22 @@ body {
 }
 
 .page-footer-container {
+    display: flex;
+    justify-content: space-between;
     margin: 0;
     padding: 0;
     list-style-type: none;
+    padding-bottom: 35px;
 }
 
 .footer-social-list {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
+    width: 145px;
     padding: 0;
     padding-left: 82px;
-    padding-bottom: 35px;
+    padding-top: 23px;
     margin: 0;
 }
 
@@ -517,8 +521,9 @@ body {
 .footer-logo {
     width: 115px;
     display: block;
-    padding-top: 16px;
+    padding-top: 24px;
     padding-right: 71px;
+    fill: #000;
 }
 
 .footer-logo:hover svg {
@@ -546,10 +551,13 @@ body {
 }
 
 .contact-tel {
+    display: block;
     text-decoration: none;
     color: black;
     font-size: 40px;
     line-height: 40px;
+    padding-top: 43px;
+    padding-right: 10px;
 }
 
 .contact-tel:hover {
@@ -599,6 +607,8 @@ body {
     bottom: 0;
     left: 0;
     margin: auto;
+    fill: #83B3D3;
+
 }
 
 .hotel-filter-catalog {
@@ -745,12 +755,6 @@ body {
     min-height: 48px;
 }
 
-/*.button-list {
-    position: relative;
-    min-width: 48px;
-    min-height: 48px;
-}*/
-
 .button-list {
     position: absolute;
     top: 97px;
@@ -781,55 +785,6 @@ body {
     padding-left: 12px;
 }
 
-/*.button-list svg {
-    fill: #ffffff;
-}
-
-.button-item-current {
-    background-color: #ffffff;
-}
-
-.button-item-current svg {
-    fill: border: 2px solid #000000;
-}*/
-
-/*.button-item {
-    position: absolute;
-    top: 97px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    min-width: 48px;
-    min-height: 48px;
-    border: 2px solid #E5E5E5;
-    border-radius: 4px;
-}
-
-.button-item:hover {
-    border: 2px solid #000000;
-}
-
-.button-item:focus {
-    border: 2px solid #68A2CA;
-}
-
-.button-item:active {
-    border: 2px solid #000000;
-}
-
-/*.button-item svg {
-    fill: #ffffff;
-}
-
-.button-item-current {
-    background-color: #ffffff;
-}
-
-.button-item-current svg {
-    fill: border: 2px solid #000000;
-}
-*/
 .button-select-item:not(:last-child) {
     margin-right: 8px;
 }
@@ -837,7 +792,6 @@ body {
 .button-item:not(:last-child) {
     margin-right: 8px;
 }
-
 
 .product-list {
     display: grid;
@@ -1223,7 +1177,6 @@ body {
     color: #FFFFFF;
     cursor: default;
 }
-
 
 .product-card-title {
     font-size: 24px;
