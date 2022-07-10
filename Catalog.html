@@ -178,11 +178,13 @@
                 <h2 class="visually-hidden">Сортировка гостиниц</h2>
                 <div class="hotel-result">
                     <output class="serch-hotel">Найдено гостиниц: 38</output>
-                    <select class="select-control-price-hotel" aria-label="Сортировка">
-                        <option value="cheap">Сначала дешёвые</option>
-                        <option value="expensive">Сначала дорогие</option>
-                        <option value="popular">Сначала популярные</option>
-                    </select>
+                    <div class="select price-hotel">
+                        <select class="select-control-price-hotel" aria-label="Сортировка">
+                            <option value="cheap">Сначала дешёвые</option>
+                            <option value="expensive">Сначала дорогие</option>
+                            <option value="popular">Сначала популярные</option>
+                        </select>
+                    </div>
                     <ul class="button-select-list">
                         <li class="button-select-item">
                             <a href="#" class="button-list tile-hotel">
@@ -381,13 +383,15 @@
                     <div class="select-control-quantity-hotel">
                         <form class="catalog-bottom" action="https://echo.htmlacademy.ru" method="get">
                             <p class="select-hotel">Гостиниц на странице:</p>
-                            <select class="select-quantity-hotel" name="Гостиниц на странице" " aria-label="
+                            <div class="select quantity-hotel">
+                                <select class="select-quantity-hotel" name="Гостиниц на странице" aria-label="
                                 Отображенное количество гостиниц после фильтра">
-                                <option value="first">1</option>
-                                <option value="second">2</option>
-                                <option value="third">3</option>
-                                <option value="fourth">4</option>
-                            </select>
+                                    <option value="first">1</option>
+                                    <option value="second">2</option>
+                                    <option value="third">3</option>
+                                    <option value="fourth" selected>4</option>
+                                </select>
+                            </div>
                         </form>
                     </div>
                 </div>

@@ -1213,6 +1213,11 @@ div {
     border-radius: 50%;
 }
 
+.control-input-radio[type="radio"]:checked+.control-mark {
+    background-image: url(../images/radio-button-checked.svg);
+    background-repeat: no-repeat;
+}
+
 .control-label {
     padding-left: 6px;
 }
@@ -1286,6 +1291,25 @@ div {
     line-height: 36px;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+.select {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 260px;
+    margin-right: auto;
+}
+
+.select-control-price-hotel {
+    width: 100%;
+    padding: 8px 14px;
+    padding-right: 48px;
+    font: inherit;
+    background-image: url("../images/vector-select.svg");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    appearance: none;
 }
 
 .select-control-price-hotel {
@@ -1426,6 +1450,7 @@ div {
 .select-hotel {
     font-size: 18px;
     line-height: 21px;
+    margin-right: -50px;
     color: #333333;
     padding: 20px 51px 17px 0px;
 }
@@ -1441,12 +1466,20 @@ div {
 }
 
 .select-quantity-hotel {
-    margin: 23px;
-    margin-right: 48px;
-    margin-left: 3px;
-    width: 160px;
+    margin-left: 50px;
     border: 2px solid #E5E5E5;
     border-radius: 4px;
+}
+
+.select-quantity-hotel {
+    width: 100%;
+    padding: 8px 14px;
+    padding-right: 48px;
+    font: inherit;
+    background-image: url("../images/vector-select.svg");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    appearance: none;
 }
 
 .select-quantity-hotel:hover {
