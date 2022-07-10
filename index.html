@@ -55,18 +55,12 @@
             <span class="number-like"></span>
           </a>
         </li>
-      </ul>
-      <!-- <li class="navigation-item-user">
+        <li class="navigation-item-user">
           <a class="button-navigation-user" href="#">
             <span class="button-navigation">Хочу сюда!</span>
           </a>
         </li>
-      </ul> -->
-      <div class="modal__window">
-        <a class="button-navigation-user" href="#">
-          <span class="button-navigation">Хочу сюда!</span>
-        </a>
-      </div>
+      </ul>
     </nav>
   </header>
   <main class="main-container main-index">
@@ -166,6 +160,33 @@
           в Седоне</p>
         <div class="button-serchhotel">
           <a class="button-serch-hotel" href="#">Поиск гостиницы в Седоне</a>
+          <div class="modal-content">
+            <form class="search-form clearfix" action="#" method="get">
+              <div class="arrival-form clearfix">
+                <label for="arrival-date">Дата заезда:</label>
+                <input class="date arrival-date" type="text" name="arrival-date" placeholder="27 апреля 2020">
+                <button class="calendar" type="button">Календарь</button>
+              </div>
+              <div class="departure-form  clearfix">
+                <label for="departure-date">Дата выезда:</label>
+                <input class="date departure-date" type="text" name="departure-date" placeholder="1 сентября 2021">
+                <button class="calendar" type="button">Календарь</button>
+              </div>
+              <div class="adults-form">
+                <label for="adults">Взрослые:</label>
+                <button class="btn-minus" type="button">-</button>
+                <input class="adults" type="text" name="adults" placeholder="2">
+                <button class="btn-plus" type="button">+</button>
+              </div>
+              <div class="children-form">
+                <label for="children">Дети:</label>
+                <button class="btn-minus" type="button">-</button>
+                <input class="children" type="text" name="children" placeholder="1">
+                <button class="btn-plus" type="button">+</button>
+              </div>
+              <button class="btn-search" type="submit">Найти</button>
+            </form>
+          </div>
         </div>
       </section>
     </div>
