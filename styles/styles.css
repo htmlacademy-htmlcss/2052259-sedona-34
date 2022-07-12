@@ -392,12 +392,15 @@ body {
     border-radius: 12px 0 0 12px;
     background: #F2F2F2;
     border: none;
+    font-size: 18px;
+    line-height: 21px;
 }
 
 .subscribe-user {
     background-image: url("../images/subscribe-background.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
+    background-size: cover;
     min-width: 1200px;
     min-height: 411px;
     margin: 0 auto;
@@ -447,6 +450,7 @@ body {
 }
 
 .button-subscribe-form {
+    width: 200px;
     padding: 12px 15px 12px 15px;
     border: none;
     border-radius: 0 10px 10px 0;
@@ -686,10 +690,6 @@ body {
     border: none;
 }
 
-div {
-    display: block;
-}
-
 .price-control {
     position: relative;
     display: flex;
@@ -712,9 +712,7 @@ div {
 
 .price-control .max-price,
 .price-control .min-price {
-    width: 120px;
-    padding-left: 20px;
-    padding-top: 10px;
+    width: 140px;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
@@ -775,14 +773,27 @@ div {
     cursor: pointer;
 }
 
+.price-text {
+    position: absolute;
+    left: 110px
+}
+
+.price-text-max {
+    position: absolute;
+    left: 255px
+}
+
 .min-price:hover {
     opacity: 0.6;
     border-radius: 4px 0px 0px 4px;
 }
 
-.min-price:focus {
+.range-input:focus {
+    border: 2px solid #FFFFFF;
     box-shadow: 0px 0px 0px 3px #81B3D2;
     border-radius: 4px 0px 0px 4px;
+    padding-bottom: 18px;
+    padding-left: 46px;
 }
 
 .min-price:active {
@@ -1111,6 +1122,7 @@ div {
     background-image: url("../images/filter-background.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    background-size: cover;
     color: #ffffff;
 }
 
@@ -1191,16 +1203,16 @@ div {
     border-radius: 4px;
 }
 
-.control:hover .control-mark {
+.control-input-check:hover+.control-mark {
     background: rgba(255, 255, 255, 0.6);
 }
 
-.control:focus .control-mark {
+.control-input-check:focus+.control-mark {
     background: rgba(255, 255, 255, 0.6);
     outline: 3px solid #83B3D3;
 }
 
-.control:active .control-mark {
+.control-input-check:active+.control-mark {
     background: rgba(255, 255, 255, 0.3);
 }
 
@@ -1211,6 +1223,19 @@ div {
 
 .control-input-radio+.control-mark {
     border-radius: 50%;
+}
+
+.control-input-radio:hover+.control-mark {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.control-input-radio:focus+.control-mark {
+    background: rgba(255, 255, 255, 0.6);
+    outline: 3px solid #83B3D3;
+}
+
+.control-input-radio:active+.control-mark {
+    background: rgba(255, 255, 255, 0.3);
 }
 
 .control-input-radio[type="radio"]:checked+.control-mark {
@@ -1497,4 +1522,386 @@ div {
 .select-quantity-hotel:disabled:hover {
     border: 2px solid rgba(0, 0, 0, 0.3);
     cursor: default;
+}
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(242, 242, 242, 0.8);
+    ;
+}
+
+.modal {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    background-color: #ffffff;
+    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+}
+
+.modal-auth {
+    width: 715px;
+    min-height: 561px;
+    margin-top: 400px;
+}
+
+.modal-close-button {
+    position: absolute;
+    padding: 0;
+    top: 53px;
+    right: 71px;
+    width: 53px;
+    height: 53px;
+    border-radius: 50%;
+    background-color: #F2F2F2;
+    border: none;
+    background-image: url("../images/btn-close-modal.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+
+.modal-close-button:hover {
+    background-color: #E6E6E6;
+}
+
+.modal-close-button:focus {
+    background: #E6E6E6;
+    border: 3px solid #83B3D3;
+}
+
+.modal-close-button:active {
+    background-color: #E6E6E6;
+    opacity: 0.3;
+}
+
+/*ОТКРЫТИЕ/ЗАКРЫТИЕ Модадьного Окна*/
+.modal-close {
+    display: none;
+}
+
+.modal-title {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 62px;
+    padding-left: 68px;
+}
+
+.arrival-form,
+.departure-form {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.search-form .date {
+    width: 400px;
+    padding: 10px;
+}
+
+.search-form input[type=text],
+.search-form label {
+    margin: 45px 0 15px 69px;
+    font-size: 20px;
+    line-height: 26px;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: 700;
+    color: #000;
+}
+
+.search-form input[type=text] {
+    background: #F2F2F2;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    margin-left: 38px;
+    padding-left: 13px;
+    margin-top: 33px;
+    margin-bottom: 7px;
+    opacity: 0.6;
+}
+
+.date:hover {
+    background-color: #E6E6E6;
+}
+
+.date:focus {
+    background-color: #E6E6E6;
+    border: 3px solid #83B3D3;
+    border-radius: 4px;
+}
+
+.date:active {
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 4px;
+}
+
+.arrival-form label,
+.departure-form label {
+    display: block;
+    float: left;
+    width: 121px;
+    margin-top: 44px;
+}
+
+.search-form .btn-calendar {
+    position: absolute;
+    top: 117px;
+    right: 89px;
+    content: "";
+    width: 15px;
+    height: 15px;
+    font-size: 0;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    background: url(../images/modal-calendar.svg) no-repeat center;
+}
+
+.search-form .btn-departure {
+    top: 51px;
+}
+
+.modal-text {
+    position: absolute;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: flex-end;
+    color: #333333;
+    padding-top: 2px;
+    padding-left: 225px;
+}
+
+.arrival-text {
+    color: #FF5757;
+}
+
+.adults-form,
+.children-form {
+    position: relative;
+}
+
+.adults-form {
+    min-width: 370px;
+    margin: 0;
+    float: left;
+    margin-right: 44px;
+}
+
+.adults-form label {
+    margin-right: 21px;
+}
+
+.children-form label {
+    margin: 0;
+}
+
+.form-label-modal {
+    position: relative;
+}
+
+.form-label-icon {
+    position: relative;
+}
+
+.tooltip {
+    position: absolute;
+}
+
+.btn-info-modal {
+    position: absolute;
+    top: 46px;
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 50%;
+    background: #83B3D3;
+    cursor: pointer;
+}
+
+.tooltip-icon {
+    width: 100%;
+    height: 50%;
+    display: block;
+}
+
+.btn-info-modal:hover {
+    color: #68A2CA;
+}
+
+.tooltip-text {
+    align-items: center;
+    width: 218px;
+    min-height: 110px;
+    background-color: #333333;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: normal;
+    text-transform: none;
+    padding: 15px 18px 18px 22px;
+    border-radius: 10px;
+    position: absolute;
+    margin-left: 13px;
+    margin-top: 87px;
+    transform: translateX(-50%);
+    z-index: 1;
+    display: none;
+}
+
+
+.btn-info-modal:hover+.tooltip-text,
+.btn-info-modal:focus+.tooltip-text {
+    display: block;
+}
+
+
+.adults-form input[type=text],
+.children-form input[type=text] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 133px;
+    padding: 12px 1px;
+    text-align: center;
+}
+
+.adults-form .btn-minus {
+    position: absolute;
+    top: 58px;
+    left: 242px;
+    content: "";
+    width: 13px;
+    height: 1px;
+    font-size: 0;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    background-color: #000000;
+    opacity: 0.3;
+}
+
+.adults-form .btn-plus {
+    position: absolute;
+    top: 58px;
+    left: 325px;
+    content: "";
+    width: 13px;
+    height: 1px;
+    font-size: 0;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    background-color: #000000;
+    opacity: 0.3;
+}
+
+.children-form .btn-minus {
+    position: absolute;
+    top: 58px;
+    left: 530px;
+    content: "";
+    width: 13px;
+    height: 1px;
+    font-size: 0;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    background-color: #000000;
+    opacity: 0.3;
+}
+
+.children-form .btn-plus {
+    position: absolute;
+    top: 58px;
+    left: 611px;
+    content: "";
+    width: 13px;
+    height: 1px;
+    font-size: 0;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    background-color: #000000;
+    opacity: 0.3;
+}
+
+.search-form .btn-search {
+    display: block;
+    width: 572px;
+    padding: 12px 180px;
+    margin: 0 auto;
+    margin-top: 31px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 36px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    background: #83B3D3;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+}
+
+.btn-minus:hover {
+    background-color: #000000;
+}
+
+.btn-minus:focus {
+    background-color: #000000;
+    border: 3px solid #83B3D3;
+    border-radius: 4px;
+}
+
+.btn-minus:active {
+    background: #000000;
+    opacity: 0.2;
+}
+
+.btn-plus:hover {
+    background-color: #000000;
+}
+
+.btn-plus:focus {
+    background-color: #000000;
+    border: 3px solid #83B3D3;
+    border-radius: 4px;
+}
+
+.btn-plus:active {
+    background: #000000;
+    opacity: 0.2;
+}
+
+.btn-search:hover {
+    background-color: #68A2CA;
+}
+
+.btn-search:focus {
+    background-color: #68A2CA;
+    border: 3px solid #756257;
+}
+
+.btn-search:active {
+    background-color: #68A2CA;
+    opacity: 0.3;
 }

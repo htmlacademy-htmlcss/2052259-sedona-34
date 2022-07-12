@@ -160,34 +160,6 @@
           в Седоне</p>
         <div class="button-serchhotel">
           <a class="button-serch-hotel" href="#">Поиск гостиницы в Седоне</a>
-          <div class="modal-content">
-            <form class="search-form clearfix" action="#" method="get">
-              <div class="arrival-form clearfix">
-                <label for="arrival-date">Дата заезда:</label>
-                <input class="date arrival-date" type="text" name="arrival-date" placeholder="27 апреля 2020">
-                <button class="calendar" type="button">Календарь</button>
-              </div>
-              <div class="departure-form  clearfix">
-                <label for="departure-date">Дата выезда:</label>
-                <input class="date departure-date" type="text" name="departure-date" placeholder="1 сентября 2021">
-                <button class="calendar" type="button">Календарь</button>
-              </div>
-              <div class="adults-form">
-                <label for="adults">Взрослые:</label>
-                <button class="btn-minus" type="button">-</button>
-                <input class="adults" type="text" name="adults" placeholder="2">
-                <button class="btn-plus" type="button">+</button>
-              </div>
-              <div class="children-form">
-                <label for="children">Дети:</label>
-                <button class="btn-minus" type="button">-</button>
-                <input class="children" type="text" name="children" placeholder="1">
-                <button class="btn-plus" type="button">+</button>
-              </div>
-              <button class="btn-search" type="submit">Найти</button>
-            </form>
-          </div>
-        </div>
       </section>
     </div>
   </main>
@@ -265,6 +237,66 @@
       </div>
     </section>
   </footer>
+  <div class="modal-container modal-close">
+    <div class="modal modal-auth">
+      <button class="modal-close-button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <section class="modal-window-content">
+        <h2 class="visually-hidden">Окно поиска гостиницы в Седоне</h2>
+        <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+          <div class="arrival-form">
+            <p class="modal-title">Поиск гостиницы в Седоне</p>
+            <label for="arrival-date">Дата Заезда:</label>
+            <input class="date arrival-date" type="text" name="arrival-date" placeholder="Укажите дату"
+              value="27 апреля 2020">
+            <button class="btn-calendar" type="button">Календарь</button>
+            <span class="modal-text arrival-text">Мы не можем отправить вас в прошлое.</span>
+          </div>
+          <div class="departure-form">
+            <label for="departure-date">Дата Выезда:</label>
+            <input class="date departure-date" type="text" name="departure-date" placeholder="Укажите дату"
+              value="1 сентября 2021">
+            <button class="btn-calendar btn-departure" type="button">Календарь</button>
+            <span class="modal-text">На эти даты есть свободные номера. Пока есть.</span>
+          </div>
+          <div class="adults-form">
+            <label for="adults">Взрослые:</label>
+            <button class="btn-minus" type="button">-</button>
+            <input class="adults" type="text" name="adults" placeholder="0" value="2">
+            <button class="btn-plus" type="button">"+"</button>
+          </div>
+          <div class="children-form">
+            <span class="form-label-modal form-label-icon">
+              <label for="children">Дети:</label>
+              <span class="tooltip">
+                <button class="btn-info-modal" type="button" aria-labelledby="tooltip-label">
+                  <svg class="tooltip-icon" width="1" height="9" viewBox="0 0 1 9" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_33716_651)">
+                      <path d="M0 9H1L1 3H0L0 9Z" fill="white"></path>
+                      <path d="M1 0H0V1H1V0Z" fill="white"></path>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_33716_651">
+                        <rect width="1" height="9" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с
+                  вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              </span>
+            </span>
+            <button class="btn-minus" type="button">-</button>
+            <input class="children" type="text" name="children" placeholder="0" value="1">
+            <button class="btn-plus" type="button">"+"</button>
+          </div>
+          <button class="btn-search" type="submit">Найти</button>
+        </form>
+      </section>
+    </div>
+  </div>
 </body>
 
 </html>
