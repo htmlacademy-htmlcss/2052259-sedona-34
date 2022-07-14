@@ -99,6 +99,8 @@ body {
     color: black;
     text-align: left;
     text-decoration: none;
+    padding-top: 19px;
+    padding-bottom: 19px;
 }
 
 .navigation-link-current::before {
