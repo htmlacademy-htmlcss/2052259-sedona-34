@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
 </head>
 
 <body>
@@ -12,7 +13,7 @@
     <!--Шапка сайта-->
     <nav class="navigation">
       <a class="header-logo" href="#"><img class="header-logotip" src="images/logo.svg" width="139" height="70"
-          alt="Логотип города Седона"></a>
+          alt="Логотип города Седона."></a>
       <ul class="navigation-list">
         <li class="navigation-item">
           <a href="index.html" class="navigation-link navigation-link-current">Главная</a>
@@ -56,7 +57,7 @@
             <span class="number-like"></span>
           </a>
         </li>
-        <li class="navigation-item-user">
+        <li class="navigation-item-user navigation-btn">
           <a class="button-navigation-user" href="#">
             <span class="button-navigation">Хочу сюда!</span>
           </a>
@@ -65,13 +66,16 @@
     </nav>
   </header>
   <main class="main-container main-index">
+
     <!--Основное содержимое главной страницы-->
+
     <div class="page-container">
       <h1 class="visually-hidden">Приглашение в Седону</h1>
       <section class="main-welcome-logo">
+        <h2 class="main-welcome-logo visually-hidden">Логотип Седона</h2>
         <div>
           <img class="logo-welcome" src="images/welcome-all.svg" width="458" height="352"
-            alt="Добро пожаловать в прекрасный город Седона">
+            alt="Добро пожаловать в прекрасный город Седона.">
         </div>
       </section>
       <section class="main-welcome-text">
@@ -89,32 +93,34 @@
                 <p class="advantages-description-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <img class="advantages-sedona-1" src="images/photo-1-real-city.jpg" width="800" height="384"
-                alt="Город Седона">
+                alt="Город Седона.">
             </div>
             <ul class="advantages-list-icon">
               <li class="advantages-description-block housing">
                 <div class="advantages-housing">
-                  <img class="" src="images/housing.svg" width="75" height="72" alt="Жильё">
+                  <img class="" src="images/housing.svg" width="75" height="72" alt="Жильё.">
                   <h4 class="advantages-title-block">Жильё</h4>
-                  <p class="advantages-description-text">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!
+                  <p class="advantages-description-text housing-text">Рекомендуем пожить в настоящем мотеле, всё как в
+                    кино!
                   </p>
                 </div>
               </li>
               <li class="advantages-description-block food">
                 <div class="advantages-food">
-                  <img class="" src="images/food.svg" width="75" height="72" alt="Еда">
+                  <img class="" src="images/food.svg" width="75" height="72" alt="Еда.">
                   <h4 class="advantages-title-block">Еда</h4>
-                  <p class="advantages-description-text">Всегда заказывайте топовый фирменный бургер, вы не
+                  <p class="advantages-description-text food-text">Всегда заказывайте<br> топовый фирменный бургер, вы
+                    не
                     разочаруетесь!
                   </p>
                 </div>
               </li>
               <li class="advantages-description-block souvenir">
                 <div class="advantages-souvenir">
-                  <img class="" src="images/souvenir.svg" width="75" height="72" alt="Сувениры">
+                  <img class="" src="images/souvenir.svg" width="75" height="72" alt="Сувениры.">
                   <h4 class="advantages-title-block">Сувениры</h4>
-                  <p class="advantages-description-text">Не только китайского,<br> но и настоящего местного<br>
-                    производства!</p>
+                  <p class="advantages-description-text souvenir-text">Не только китайского,<br> но и настоящего
+                    местного производства!</p>
                 </div>
               </li>
             </ul>
@@ -122,7 +128,7 @@
           <li class="advantages-item devil-bridge">
             <div class="devil-bridge">
               <img class="advantages-sedona-2" src="images/photo-canyon.jpg" width="800" height="384"
-                alt="Каньон мост Дьявола">
+                alt="Каньон мост Дьявола.">
               <div class="advantages-devil-bridge">
                 <h3 class="advantages-title">Там есть<br> мост дьявола</h3>
                 <p class="advantages-description">— №2 —</p>
@@ -157,10 +163,10 @@
         <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
         <p class="serch-hotel-title">Заинтересовались?</p>
         <p class="serch-hotel-text">Укажите предполагаемые даты поездки,</p>
-        <p class="serch-hotel-text serch-hotel-text2">и мы покажем вам лучшие предложения гостиниц
-          в Седоне</p>
+        <p class="serch-hotel-text serch-hotel-text2">и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <div class="button-serchhotel">
           <a class="button-serch-hotel" href="#">Поиск гостиницы в Седоне</a>
+        </div>
       </section>
     </div>
   </main>
@@ -197,7 +203,7 @@
                   </clipPath>
                 </defs>
               </svg>
-              <!--<span class="visually-hidden">VK</span>-->
+              <span class="visually-hidden">VK</span>
             </a>
           </li>
           <li class="footer-social-item">
@@ -210,12 +216,12 @@
                   </path>
                 </g>
                 <defs>
-                  <clipPath id="a">
+                  <clipPath id="b">
                     <path fill="#fff" d="M0 0h18v17H0z"></path>
                   </clipPath>
                 </defs>
               </svg>
-              <!--<span class="visually-hidden">Telegram</span>-->
+              <span class="visually-hidden">Telegram</span>
             </a>
           </li>
           <li class="footer-social-item">
@@ -226,7 +232,7 @@
                   d="M18.6 0H3.18C1.31 0 0 1.6 0 3.4v10.1C0 15.4 1.31 17 3.17 17h15.66c1.64 0 3.17-1.6 3.17-3.4V3.4C21.78 1.6 20.47 0 18.6 0ZM7.67 12.54V4.46L15 8.5l-7.33 4.04Z">
                 </path>
               </svg>
-              <!--<span class="visually-hidden">Youtube</span>-->
+              <span class="visually-hidden">Youtube</span>
             </a>
           </li>
         </ul>
@@ -252,30 +258,31 @@
         <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
           <div class="arrival-form">
             <p class="modal-title">Поиск гостиницы в Седоне</p>
-            <label for="arrival-date">Дата Заезда:</label>
-            <input class="date arrival-date" type="text" name="arrival-date" placeholder="Укажите дату"
-              value="27 апреля 2020">
+            <label for="arrival-date">"Дата Заезда:"</label>
+            <input class="date arrival-date" type="text" name="arrival-date" id="arrival-date"
+              placeholder="Укажите дату" value="27 апреля 2020">
             <button class="btn-calendar" type="button">Календарь</button>
             <span class="modal-text arrival-text">Мы не можем отправить вас в прошлое.</span>
           </div>
           <div class="departure-form">
-            <label for="departure-date">Дата Выезда:</label>
-            <input class="date departure-date" type="text" name="departure-date" placeholder="Укажите дату"
-              value="1 сентября 2021">
+            <label for="departure-date">"Дата Выезда:"</label>
+            <input class="date departure-date" type="text" name="departure-date" id="departure-date"
+              placeholder="Укажите дату" value="1 сентября 2021">
             <button class="btn-calendar btn-departure" type="button">Календарь</button>
             <span class="modal-text">На эти даты есть свободные номера. Пока есть.</span>
           </div>
           <div class="adults-form">
             <label for="adults">Взрослые:</label>
             <button class="btn-minus" type="button">-</button>
-            <input class="adults" type="text" name="adults" placeholder="0" value="2">
+            <input class="adults" type="text" name="adults" id="adults" placeholder="0" value="2">
             <button class="btn-plus" type="button">"+"</button>
           </div>
           <div class="children-form">
             <span class="form-label-modal form-label-icon">
               <label for="children">Дети:</label>
               <span class="tooltip">
-                <button class="btn-info-modal" type="button" aria-labelledby="tooltip-label">
+                <button class="btn-info-modal" type="button" name="children" id="children"
+                  aria-labelledby="tooltip-label">
                   <svg class="tooltip-icon" width="1" height="9" viewBox="0 0 1 9" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_33716_651)">
